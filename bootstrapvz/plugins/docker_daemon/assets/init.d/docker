@@ -87,7 +87,7 @@ case "$1" in
 			ulimit -n $DOCKER_NOFILE
 		fi
 
-        if [ -n "$DOCKER_LOCKEDMEMORY" ]; then
+		if [ -n "$DOCKER_LOCKEDMEMORY" ]; then
 			ulimit -l $DOCKER_LOCKEDMEMORY
 		fi
 
